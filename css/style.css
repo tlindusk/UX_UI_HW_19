@@ -39,6 +39,10 @@ p.body {
 
 #sideBar {
     width: 16%;
+}
+
+#sideBar > div {
+    width: 16%;
     position: fixed;
 }
 
