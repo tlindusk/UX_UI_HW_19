@@ -1,0 +1,156 @@
+h1 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 51px;
+    font-weight: bold;
+    margin: 5% 1% 1%;
+}
+
+h2 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 38px;
+    font-weight: bold;
+    margin: 5% 1% 1%;
+}
+
+h3 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 5% 1% 1%;
+}
+
+h4 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 21px;
+    margin: 1%;
+}
+
+p {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    margin: 1%;
+}
+
+p.body {
+    max-width: 83%;
+}
+
+/*Leave like 1% for the Scroll Bar*/
+
+#sideBar {
+    width: 16%;
+    position: fixed;
+}
+
+#content {
+    width: 83%;
+}
+
+.logo {
+    width: 23%;
+    height: auto;
+    padding: auto;
+    text-align: center;
+}
+
+#imgLogo {
+    max-width: 5%;
+    float: right;
+    margin-bottom: 5%;
+    margin-right: 16%;
+}
+
+#imgHero {
+    max-width: 83%;
+}
+
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    max-width: 83%
+}
+
+.flexContainer > div {
+    width: 30%;
+    margin: 5%;
+    padding: 1%;
+    background-color: #B2ABFF;
+}
+
+.workGrid {
+    display: grid;
+    align-content: space-evenly;
+    max-width: 83%;
+}
+
+.item1 > img, .item3 > img {
+    width: 100%;
+    border: 2px solid;
+}
+
+.item2 {
+    grid-area: 1 / 2 / span 1 / span 3;
+    background-color: #B2ABFF;
+}
+
+.item4 {
+    grid-area: 2 / 2 / span 1 / span 3;
+    background-color: #B2ABFF;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.grid-container > div {
+    background-color: #B2ABFF;
+}
+
+button {
+    background-color: #3D3593;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin: 1%;
+    width: 20%;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+button > h4 {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#footer {
+    background-color: #3D3593;
+    margin-top: 5%;
+}
+
+@media only screen and (max-width: 600){
+    .flexContainer {
+        flex-direction: column;
+    }
+
+    .flexContainer > div {
+        width: 100%;
+    }
+
+    .item2 {
+        grid-area: 2 / 1 / span 1 / span 1;
+    }
+
+    .item4 {
+        grid-area: 4 / 1 / span 1 / span 1;
+    }
+}
