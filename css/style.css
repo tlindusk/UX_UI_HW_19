@@ -31,6 +31,15 @@ p {
     margin: 1%;
 }
 
+a {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 21px;
+    margin: 5% 1% 1%;
+    color: black;
+    display: flex;
+    flex-direction: row;
+}
+
 p.body {
     max-width: 83%;
 }

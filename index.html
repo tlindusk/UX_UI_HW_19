@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
     <head>
         <link href="css/style.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
@@ -8,23 +10,24 @@
     <body>
         <section id="sideBar" class="inline-block">
             <div>
-                <h3>Top</h3>
-                <h3>About</h3>
-                <h3>Skills</h3>
-                <h3>Recent Work</h3>
-                <h3>Contacts</h3>
+                <h3>Jump To</h3>
+                <a href="#clickTop">Top</a>
+                <a href="#clickAbout">About</a>
+                <a href="#clickSkills">Skills</a>
+                <a href="#clickWork">Recent Work</a>
+                <a href="#clickContacts">Contacts</a>
             </div>
         </section>
         <section id="content"  class="inline-block">
-            <div>
+            <div id="clickTop">
                 <img id="imgLogo" src="images/personalLogoLight.png">
             </div>
             <div>
                 <img id="imgHero" src="images/HeroImg1.jpg">
                 <h1>Thomas Lindusky</h1>
             </div>
-            <div class="flexItem">
-                <h3>About Me</h3>
+            <div class="flexItem"  id="clickAbout">
+                <h2>About Me</h2>
                 <p class="body">
                     My name is Thomas Lindusky. Stories and narratives, ludonarratives especially, are what engage me. 
                     I am fueled by interesting challenges that lead to evocative solutions. 
@@ -32,8 +35,8 @@
                 </p>
             </div>
             <!--  My UX Skills section coded using CSS flex -->
-            <section class="mySkills">
-                <h1>My UX Skills</h1>
+            <section class="mySkills"  id="clickSkills">
+                <h2>My UX Skills</h2>
                 <div class="flexContainer">
                     <div>
                         <h3>Attention to Detail</h3>
@@ -49,8 +52,8 @@
                     </div>
                 </div>
             </section>
-            <section class="myWork">
-                <h1>My Work</h1>
+            <section class="myWork" id="clickWork">
+                <h2>My Work</h2>
                 <div class="workGrid">
                     <div class="item1">
                         <img src="images/NonProfitRedesign.png">
@@ -73,7 +76,7 @@
             </section>
 
             <section id="footer" class="flexContainer">
-                <div>
+                <div  id="clickContacts">
                     <h3>Contacts</h3>
                 </div>
             </section>
