@@ -19,3 +19,13 @@ $(document).ready(function(){
         }
     });
 });
+
+function NavFunction() {
+    var x = document.getElementById("sideBar");
+    if (x.className === "inline-block") {
+        x.className += " responsive";
+    } 
+    else {
+        x.className = "inline-block";
+    }
+}

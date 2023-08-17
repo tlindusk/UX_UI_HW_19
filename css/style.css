@@ -2,33 +2,33 @@ h1 {
     font-family: 'Noto Sans', sans-serif;
     font-size: 51px;
     font-weight: bold;
-    margin: 2% 1% 1%;
+    margin: 2% 0% 1%;
 }
 
 h2 {
     font-family: 'Noto Sans', sans-serif;
     font-size: 38px;
     font-weight: bold;
-    margin: 2% 1% 1%;
+    margin: 2% 0% 1%;
 }
 
 h3 {
     font-family: 'Noto Sans', sans-serif;
     font-size: 28px;
     font-weight: bold;
-    margin: 2% 1% 1%;
+    margin: 2% 0% 1%;
 }
 
 h4 {
     font-family: 'Noto Sans', sans-serif;
     font-size: 21px;
-    margin: 1%;
+    margin: 1% 0%;
 }
 
 p {
     font-family: 'Noto Sans', sans-serif;
     font-size: 16px;
-    margin: 1%;
+    margin: 1% 0%;
 }
 
 p.body {
@@ -47,7 +47,7 @@ a.navLink {
 a.footerLink {
     font-family: 'Noto Sans', sans-serif;
     font-size: 16px;
-    margin: 2% 1% 1%;
+    margin: 2% 0% 1%;
     color: white;
     display: flex;
     flex-direction: row;
@@ -64,6 +64,10 @@ a.footerLink {
     min-width: 250px;
     position: fixed;
     padding: 2%;
+}
+
+#sideBar .icon {
+    display: none;
 }
 
 #content {
@@ -93,6 +97,7 @@ a.footerLink {
 .inline-block {
     display: inline-block;
     vertical-align: top;
+    overflow: hidden;
 }
 
 .flexContainer {
@@ -117,12 +122,11 @@ a.footerLink {
 .workGrid {
     display: grid;
     align-content: space-evenly;
-    max-width: 83%;
+    width: 86.9%;
 }
 
 .item1 > img, .item3 > img {
-    width: 100%;
-    /*border: 2px solid;*/
+    max-height: 300px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -130,12 +134,18 @@ a.footerLink {
     grid-area: 1 / 2 / span 1 / span 3;
     background-color: #B2ABFF;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    padding-left: 2%;
+    max-height: 300px;
+    min-width: 350px;
 }
 
 .item4 {
     grid-area: 2 / 2 / span 1 / span 3;
     background-color: #B2ABFF;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    padding-left: 2%;
+    max-height: 300px;
+    min-width: 350px;
 }
 
 .grid-container {
@@ -153,7 +163,7 @@ button {
     color: white;
     border: none;
     border-radius: 10px;
-    margin: 1%;
+    margin: 1% 0%;
     width: 200px;
     transition-duration: 0.2s;
 }
@@ -175,6 +185,47 @@ footer {
     color: white;
     margin-top: 2%;
     padding: 2%;
+}
+
+.footerGrid {
+    display: grid;
+    align-content: space-evenly;
+    max-width: 83%;
+}
+
+.foot1 {
+    grid-area: 1 / 1 / span 2 / span 2;
+}
+
+.foot2 {
+    grid-area: 1 / 5 / span 2 / span 2;
+}
+
+@media only screen and (max-width: 1300){
+    #sideBar a {
+        display: none;
+    }
+    
+    #sideBar a.icon {
+        float: right;
+        display: block;
+    }
+
+    .inline-block.responsive {
+        position: relative;
+    }
+/*
+    .inline-block.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+*/
+    .inline-block.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
 }
 
 @media only screen and (max-width: 600){
