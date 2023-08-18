@@ -214,13 +214,13 @@ footer {
     .inline-block.responsive {
         position: relative;
     }
-/*
+
     .inline-block.responsive .icon {
         position: absolute;
         right: 0;
         top: 0;
     }
-*/
+
     .inline-block.responsive a {
         float: none;
         display: block;
@@ -228,9 +228,10 @@ footer {
     }
 }
 
-@media only screen and (max-width: 600){
+@media only screen and (max-width: 1500){
     .flexContainer {
         flex-direction: column;
+        justify-content: space-evenly;
     }
 
     .flexContainer > div {
