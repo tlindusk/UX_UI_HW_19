@@ -59,7 +59,7 @@ a.footerLink {
     width: 16%;
 }
 
-#sideBar > div {
+#sideBar > aside {
     width: 16%;
     min-width: 250px;
     position: fixed;
